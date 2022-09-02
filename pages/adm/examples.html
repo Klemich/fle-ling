@@ -1,3 +1,4 @@
+
 <html lang="fr">
   <head>
     <!-- Meta & Links -->
@@ -7,14 +8,15 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
 	<link rel="icon" href="/fle-ling/favicon.ico" type="image/icon">
-    <title>Clément Michard</title>
+    <title>Exemple de cours</title>
+
 
     <!-- css -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link href="/fle-ling/assets/css/main.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-
+    <link href="/fle-ling/css/carousel.css" rel="stylesheet">
 
     <!-- Style static -->
     <style>
@@ -76,7 +78,7 @@
 	<header>
 	  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="#">Clément Michard - Prof linguiste</a>
+		  <a class="navbar-brand" href="#">CV : Clément Michard  </a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -86,13 +88,13 @@
 				<a class="nav-link" href="/fle-ling/index.html">Accueil</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="/fle-ling/pages/adm/cv.html" target="_blank">CV</a>
+				<a class="nav-link active" aria-current="page" href="#">CV</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="/fle-ling/pages/coll/grev.html" target="_blank">Reviews</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Gallerie</a>
+				<a class="nav-link" href="/fle-ling/pages/gall/gallerie.html" target="_blank">Gallerie</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="/fle-ling/pages/hd/cours.html" target="_blank">Cours</a>
@@ -110,20 +112,34 @@
 
 	<main>
 
+		<div style="margin: 5px 20px 20px;">
+			<div style="margin-bottom: 2px">
+				<h1>Le groupe nominal - cours A2 - 2h</h1>: <input type="button" value="Show" onclick="
+					(function(input, content) {
+						input.value = content.style.display == 'none' ? 'Hide' : 'Show';
+						content.style.display = content.style.display == 'none' ? 'block' : 'none';
+					})(this, this.parentNode.nextSibling.getElementsByTagName('div')[0])" />
+			</div>
+			<div style="border: 1px inset; margin: 0px; padding: 6px">
+				<div style="display: block;height:35vh">
+					<iframe src="/fle-ling/assets/upload/files/A2-GN-ex.pdf#toolbar=0" width="100%" height="100%">
+				    </iframe>
+				</div>
+			</div>
+		</div>
+		
 
 
-	  <!-- FOOTER -->
-	  <footer class="container">
-		<p class="float-end"><a href="#">Vers haut de page</a></p>
-		<p>Clément Michard - Auto-entrepreneur depuis 2013<a href="pages/donnees.html">Données personnelles</a></p>
-	  </footer>
-	  </main>
+	<!-- FOOTER -->
+	<footer class="container">
+	  <p class="float-end"><a href="#">Vers haut de page</a></p>
+	  <p>Clément Michard - Auto-entrepreneur depuis 2013<a href="pages/donnees.html">Données personnelles</a></p>
+	</footer>
+	</main>
 
 
-	  <script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
 
 
-    </body>
-  </html>
-
-  <!--Footer section-->
+  </body>
+</html>
